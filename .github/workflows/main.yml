@@ -70,3 +70,4 @@ jobs:
           sudo docker run --rm -d -p 5000:5000 alexeylyapin/infra:v1.1
 
 #попробуем еще разок
+#попытка 3
