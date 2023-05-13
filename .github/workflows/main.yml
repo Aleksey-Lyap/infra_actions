@@ -51,6 +51,7 @@ jobs:
         with:
           push: true
           tags: alexeylyapin/infra:v1.1
+
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
@@ -68,6 +69,3 @@ jobs:
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 alexeylyapin/infra:v1.1
-
-#попробуем еще разок
-#попытка 3
